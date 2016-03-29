@@ -1,6 +1,6 @@
 <header id="header">
   <div class="inner">
-    <a href="{{ site.baseurl }}" class="logo">
+    <a href="{{ site.baseurl | prepend: site.url }}" class="logo">
       <span class="symbol"><img src="{{ "/assets/images/logo.svg" | prepend: site.baseurl }}" alt=""></span>
       <span class="title">{{ site.title }}</span>
     </a>
