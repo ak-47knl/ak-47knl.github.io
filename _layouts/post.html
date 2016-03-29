@@ -19,4 +19,81 @@ layout: default
     </tr>
     </tbody>
 </table>
+
 {{ content }}
+
+<h2>4 GENERATION PEDIGREE</h2>
+<table class="alt">
+    <thead>
+    <tr>
+        <th>First</th>
+        <th>Second</th>
+        <th>Third</th>
+        <th>Fourth</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="8">{{ page.gen1_sire.name }}</td>
+        <td rowspan="4">{{ page.gen1_sire.gen2_sire.name }}</td>
+        <td rowspan="2">{{ page.gen1_sire.gen2_sire.gen3_sire.name }}</td>
+        <td>{{ page.gen1_sire.gen2_sire.gen3_sire.gen4_sire.name }}</td>
+    </tr>
+    <tr>
+        <td>{{ page.gen1_sire.gen2_sire.gen3_sire.gen4_dam.name }}</td>
+    </tr>
+    <tr>
+        <td rowspan="2">{{ page.gen1_sire.gen2_sire.gen3_dam.name }}</td>
+        <td>{{ page.gen1_sire.gen2_sire.gen3_dam.gen4_sire.name }}</td>
+    </tr>
+    <tr>
+        <td>{{ page.gen1_sire.gen2_sire.gen3_dam.gen4_dam.name }}</td>
+    </tr>
+    <tr>
+        <td rowspan="4">{{ page.gen1_sire.gen2_dam.name }}</td>
+        <td rowspan="2">{{ page.gen1_sire.gen2_dam.gen3_sire.name }}</td>
+        <td>{{ page.gen1_sire.gen2_dam.gen3_sire.gen4_sire.name }}</td>
+    </tr>
+    <tr>
+        <td>{{ page.gen1_sire.gen2_dam.gen3_sire.gen4_dam.name }}</td>
+    </tr>
+    <tr>
+        <td rowspan="2">{{ page.gen1_sire.gen2_dam.gen3_dam.name }}</td>
+        <td>{{ page.gen1_sire.gen2_dam.gen3_dam.gen4_sire.name }}</td>
+    </tr>
+    <tr>
+        <td>{{ page.gen1_sire.gen2_dam.gen3_dam.gen4_dam.name }}</td>
+    </tr>
+    <tr>
+        <td rowspan="8">{{ page.gen1_dam.name }}</td>
+        <td rowspan="4">{{ page.gen1_dam.gen2_sire.name }}</td>
+        <td rowspan="2">{{ page.gen1_dam.gen2_sire.gen3_sire.name }}</td>
+        <td>{{ page.gen1_dam.gen2_sire.gen3_sire.gen4_sire.name }}</td>
+    </tr>
+    <tr>
+        <td>{{ page.gen1_dam.gen2_sire.gen3_sire.gen4_dam.name }}</td>
+    </tr>
+    <tr>
+        <td rowspan="2">{{ page.gen1_dam.gen2_sire.gen3_dam.name }}</td>
+        <td>{{ page.gen1_dam.gen2_sire.gen3_dam.gen4_sire.name }}</td>
+    </tr>
+    <tr>
+        <td>{{ page.gen1_dam.gen2_sire.gen3_dam.gen4_dam.name }}</td>
+    </tr>
+    <tr>
+        <td rowspan="4">{{ page.gen1_dam.gen2_dam.name }}</td>
+        <td rowspan="2">{{ page.gen1_dam.gen2_dam.gen3_sire.name }}</td>
+        <td>{{ page.gen1_dam.gen2_dam.gen3_sire.gen4_sire.name }}</td>
+    </tr>
+    <tr>
+        <td>{{ page.gen1_dam.gen2_dam.gen3_sire.gen4_dam.name }}</td>
+    </tr>
+    <tr>
+        <td rowspan="2">{{ page.gen1_dam.gen2_dam.gen3_dam.name }}</td>
+        <td>{{ page.gen1_dam.gen2_dam.gen3_dam.gen4_sire.name }}</td>
+    </tr>
+    <tr>
+        <td>{{ page.gen1_dam.gen2_dam.gen3_dam.gen4_dam.name }}</td>
+    </tr>
+    </tbody>
+</table>
