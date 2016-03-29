@@ -15,8 +15,8 @@ description: > # this means to ignore newlines until "baseurl:"
   If you like someone, please contact through the form below, send us an email or simply call us.
   We are always ready to carry out a tour of our kennel.
 baseurl: ""
-url: "https://www.ak-47knl.com"
-transifex_api: ""
+url: "https://ak-47knl.com"
+transifex_api: 248af6f8c5eb48f1b6edb7b77876fcde
 socials:
   - title: Twitter
     url: https://twitter.com/ArsenBespalov
