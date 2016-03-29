@@ -18,9 +18,6 @@ baseurl: ""
 url: "https://ak-47knl.com"
 transifex_api: 248af6f8c5eb48f1b6edb7b77876fcde
 socials:
-  - title: Twitter
-    url: https://twitter.com/ArsenBespalov
-    class: twitter
 
 # Build settings
 markdown: kramdown
