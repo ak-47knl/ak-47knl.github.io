@@ -38,7 +38,3 @@ exclude:
 sass:
   sass_dir: assets/css/_sass
   style: compressed
-
-# Add Jekyll plugin
-gems:
-  - font-awesome-sass

@@ -8,8 +8,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-@import 'font-awesome-sprockets';
-@import 'font-awesome';
+@import 'font-awesome.min.css';
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,700,900&subset=latin,cyrillic);
 
 @include skel-breakpoints((
