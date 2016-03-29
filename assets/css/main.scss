@@ -9,7 +9,7 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import 'font-awesome.min.css';
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,700,900&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300,900,700&subset=latin,cyrillic);
 
 @include skel-breakpoints((
         xlarge: '(max-width: 1680px)',
