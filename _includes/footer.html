@@ -1,38 +1,37 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+<footer id="footer">
+  <div class="inner">
+    <section>
+      <h2>Get in touch</h2>
+      <form action="https://api.ak-47knl.com/" method="post">
+        <div class="field half first">
+          <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="field half">
+          <input type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div class="field">
+          <textarea name="message" id="message" placeholder="Message"></textarea>
+        </div>
+        <ul class="actions">
+          <li><input type="submit" value="Send" class="special"></li>
         </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
+      </form>
+    </section>
+    <section>
+      <h2>Follow</h2>
+      <ul class="icons">
+        {% for social in site.socials %}
+          <li><a href="{{ social.url }}" class="icon style2 fa-{{ social.class }}"><span class="label">{{ social.title }}</span></a></li>
+        {% endfor %}
+        <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}" class="icon style2 fa-rss"><span class="label">Subscribe via RSS</span></a></li>
+        <li><a href="tel:{{ site.phone }}" class="icon style2 fa-phone"><span class="label">Phone</span></a></li>
+        <li><a href="mailto:{{ site.email }}" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+      </ul>
+    </section>
+    <ul class="copyright">
+      <li>&copy; 2010 - {{ site.time | date '%Y' }} AK-47 kennel. All right reserved.</li>
+      <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      <li>Developed by: <a href="https://limydesign.ru">LimyDesign Studio</a></li>
+    </ul>
   </div>
-
 </footer>

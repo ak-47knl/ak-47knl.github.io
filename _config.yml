@@ -6,16 +6,39 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: AK-47 kennel
+slogan: Welcome to the AK-47 kennel. We have the best of the best breeds of dogs.
+email: ak-47kennels@hotmail.com
+phone: +79149262796
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+  You can get acquainted with all the dogs that are available in our cattery at the moment.
+  If you like someone, please contact through the form below, send us an email or simply call us.
+  We are always ready to carry out a tour of our kennel.
+baseurl: ""
+url: "https://www.ak-47knl.com"
+transifex_api: ""
+socials:
+  - title: Twitter
+    url: https://twitter.com/ArsenBespalov
+    class: twitter
 
 # Build settings
 markdown: kramdown
+
+# Permalinks
+permalink: none
+
+# Files/Folders to be excluded from generated _site folder
+exclude:
+  - CNAME
+  - .gitignore
+  - .sass-cache
+
+# Sass conversion config
+sass:
+  sass_dir: assets/css/_sass
+  style: compressed
+
+# Add Jekyll plugin
+gems:
+  - font-awesome-sass
