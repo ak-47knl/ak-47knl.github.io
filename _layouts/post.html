@@ -3,4 +3,20 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 <span class="image main"><img src="{{ '/assets/images/' | append: page.title_image | prepend: site.baseurl }}" alt=""></span>
+<table>
+    <thead>
+    <tr>
+        <td>BREEDER</td>
+        <td>SEX</td>
+        <td>COLOR</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ page.breeder | upcase }}</td>
+        <td>{{ page.sex | upcase }}</td>
+        <td>{{ page.color | upcase }}</td>
+    </tr>
+    </tbody>
+</table>
 {{ content }}
