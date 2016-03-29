@@ -94,6 +94,58 @@
 			// Fix: Placeholder polyfill.
 				$form.placeholder();
 
+			// Submit form.
+				$form.submit(function(e) {
+					e.preventDefault();
+					var _action 	= $(this).attr('action'),
+						_name 		= $(this).find('#name').val(),
+						_email 		= $(this).find('#email').val(),
+						_message 	= $(this).find('#message').val();
+
+					// Simple validation at client's end
+					// We simple focus to empty field
+					var proceed = true;
+					if (_name == '') {
+						$(this).find('#name').focus();
+						proceed = false;
+					}
+					if (_email == '') {
+						$(this).find('#email').focus();
+						proceed = false;
+					}
+					if (_message == '') {
+						$(this).find('#message').focus();
+						proceed = false;
+					}
+
+					// Everything look good! proceed...
+					if (proceed) {
+						// Data to be send to server
+						var _data = {
+							'userName': _name,
+							'userEmail': _email,
+							'userMessage': _message
+						};
+
+						// Ajax post data to server
+						$.ajax({
+							type: 'POST',
+							url: _action,
+							crossDomain: false,
+							dataType: 'json',
+							success: function(response) {
+								if (response.type == 'error') {
+									console.error(response.text);
+								} else {
+									console.log(response.text);
+									$(this).find('input').val('');
+									$(this).find('textarea').val('');
+								}
+							}
+						});
+					}
+				});
+
 		// Prioritize "important" elements on medium.
 			skel.on('+medium -medium', function() {
 				$.prioritize(
