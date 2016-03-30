@@ -154,8 +154,8 @@
 									$form.find('textarea').val('');
 								}
 							},
-							fail: function(jqXHR, status) {
-								console.error('Request failed: ' + status);
+							complete: function(jqXHR, status) {
+								console.log('Request status: ' + status);
 							}
 						});
 					}
