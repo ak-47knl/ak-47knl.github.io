@@ -156,6 +156,7 @@
 							},
 							complete: function(jqXHR, status) {
 								console.log('Request status: ' + status);
+								console.log('Action: ' + _action);
 							}
 						});
 					}
