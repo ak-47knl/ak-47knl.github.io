@@ -143,6 +143,7 @@
 							type: 'POST',
 							url: _action,
 							crossDomain: false,
+							data: _data,
 							dataType: 'json',
 							success: function(response) {
 								console.log('Yo! Proceed...');
@@ -156,7 +157,6 @@
 							},
 							complete: function(jqXHR, status) {
 								console.log('Request status: ' + status);
-								console.log('Action: ' + _action);
 							}
 						});
 					}
