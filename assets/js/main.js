@@ -63,7 +63,11 @@
 
 						})
 						.on('focus', function() {
-							$submits.text($button_text + ' (Ctrl + Enter)');
+							var is_Mac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+							var append_text = ' (Ctrl + Enter)';
+							if (is_Mac)
+								append_text = ' (⌘ + Enter)';
+							$submits.text($button_text + append_text);
 						})
 						.on('blur', function() {
 							$submits.text($button_text);
