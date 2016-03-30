@@ -61,6 +61,9 @@
 							}
 
 						})
+						.on('focus', function() {
+							console.log($submits);
+						})
 						.on('blur focus', function() {
 							$this.val($.trim($this.val()));
 						})
@@ -73,7 +76,6 @@
 								.css('height', 'auto')
 								.css('height', $this.prop('scrollHeight') + 'px');
 
-							console.log('Yyyy', $submits);
 						})
 						.on('keyup', function(event) {
 
