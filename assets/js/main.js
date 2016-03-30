@@ -63,6 +63,7 @@
 						})
 						.on('blur focus', function() {
 							$this.val($.trim($this.val()));
+							$submits.text('Send (Ctrl+Enter)');
 						})
 						.on('input blur focus --init', function() {
 
