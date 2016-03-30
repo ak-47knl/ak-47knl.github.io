@@ -150,7 +150,12 @@
 								if (response.type == 'error') {
 									sweetAlert('Oops!', response.text, 'error');
 								} else {
-									sweetAlert('Okey!', response.text, 'success');
+									swal({
+										title: 'Okey!',
+										text: response.text,
+										type: 'success',
+										html: true
+									});
 									$form.find('input').val('');
 									$form.find('textarea').val('');
 								}
