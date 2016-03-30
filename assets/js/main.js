@@ -40,7 +40,8 @@
 
 					var $this = $(this),
 						$wrapper = $('<div class="textarea-wrapper"></div>'),
-						$submits = $form.find('button[type="submit"]');
+						$submits = $form.find('button[type="submit"]'),
+						$button_text = $submits.text();
 
 					$this
 						.wrap($wrapper)
@@ -62,10 +63,10 @@
 
 						})
 						.on('focus', function() {
-							console.log('Focus');
+							$submits.text($button_text + ' (Ctrl + Enter)');
 						})
 						.on('blur', function() {
-							console.log('Blur');
+							$submits.text($button_text);
 						})
 						.on('blur focus', function() {
 							$this.val($.trim($this.val()));
