@@ -66,7 +66,7 @@
 							var is_Mac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
 							var append_text = ' (Ctrl + Enter)';
 							if (is_Mac)
-								append_text = ' (⌘ + Enter)';
+								append_text = ' (⌘ + ⏎)';
 							$submits.text($button_text + append_text);
 						})
 						.on('blur', function() {
