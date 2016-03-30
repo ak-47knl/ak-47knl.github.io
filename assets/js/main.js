@@ -153,6 +153,9 @@
 									$form.find('input').val('');
 									$form.find('textarea').val('');
 								}
+							},
+							fail: function(jqXHR, status) {
+								console.error('Request failed: ' + status);
 							}
 						});
 					}
