@@ -150,8 +150,8 @@
 									console.error(response.text);
 								} else {
 									console.log(response.text);
-									$(this).find('input').val('');
-									$(this).find('textarea').val('');
+									$form.find('input').val('');
+									$form.find('textarea').val('');
 								}
 							}
 						});
