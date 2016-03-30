@@ -50,8 +50,7 @@
 						.css('resize', 'none')
 						.on('keydown', function(event) {
 
-							if (event.keyCode == 13
-							&&	event.ctrlKey) {
+							if (event.keyCode == 13 && (event.ctrlKey || event.metaKey)) {
 
 								event.preventDefault();
 								event.stopPropagation();
@@ -66,7 +65,7 @@
 							var is_Mac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
 							var append_text = ' (Ctrl + Enter)';
 							if (is_Mac)
-								append_text = ' (⌘ + ⏎)';
+								append_text = ' (⌘ + Enter)';
 							$submits.text($button_text + append_text);
 						})
 						.on('blur', function() {
