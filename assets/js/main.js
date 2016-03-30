@@ -63,7 +63,6 @@
 						})
 						.on('blur focus', function() {
 							$this.val($.trim($this.val()));
-							console.log('Yyyy', $submits);
 						})
 						.on('input blur focus --init', function() {
 
@@ -74,6 +73,7 @@
 								.css('height', 'auto')
 								.css('height', $this.prop('scrollHeight') + 'px');
 
+							console.log('Yyyy', $submits);
 						})
 						.on('keyup', function(event) {
 
