@@ -131,7 +131,6 @@
 
 					// Everything look good! proceed...
 					if (proceed) {
-						console.log('Yo! Proceed...');
 						// Data to be send to server
 						var _data = {
 							'userName': _name,
@@ -146,6 +145,7 @@
 							crossDomain: false,
 							dataType: 'json',
 							success: function(response) {
+								console.log('Yo! Proceed...');
 								if (response.type == 'error') {
 									console.error(response.text);
 								} else {
