@@ -40,7 +40,7 @@
 
 					var $this = $(this),
 						$wrapper = $('<div class="textarea-wrapper"></div>'),
-						$submits = $this.find('button[type="submit"]');
+						$submits = $form.find('button[type="submit"]');
 
 					$this
 						.wrap($wrapper)
