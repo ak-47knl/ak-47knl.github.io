@@ -57,7 +57,7 @@
 
 								$(this).blur();
 
-								$submits.click();
+								$form.submit();
 							}
 
 						})
