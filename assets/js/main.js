@@ -109,11 +109,11 @@
 						$(this).find('#name').focus();
 						proceed = false;
 					}
-					if (_email == '') {
+					else if (_email == '') {
 						$(this).find('#email').focus();
 						proceed = false;
 					}
-					if (_message == '') {
+					else if (_message == '') {
 						$(this).find('#message').focus();
 						proceed = false;
 					}
