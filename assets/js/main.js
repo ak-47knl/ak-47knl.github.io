@@ -62,7 +62,10 @@
 
 						})
 						.on('focus', function() {
-							console.log($submits);
+							console.log('Focus');
+						})
+						.on('blur', function() {
+							console.log('Blur');
 						})
 						.on('blur focus', function() {
 							$this.val($.trim($this.val()));
