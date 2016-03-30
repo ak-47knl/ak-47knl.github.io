@@ -9,6 +9,7 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import 'font-awesome.min.css';
+@import "sweetalert.css";
 @import url(https://fonts.googleapis.com/css?family=Exo+2:300,900,700&subset=latin,cyrillic);
 
 @include skel-breakpoints((

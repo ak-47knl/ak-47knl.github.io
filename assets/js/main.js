@@ -148,15 +148,16 @@
 							success: function(response) {
 								console.log('Yo! Proceed...');
 								if (response.type == 'error') {
-									console.error(response.text);
+									sweetAlert('Oops!', response.text, 'error');
 								} else {
-									console.log(response.text);
+									sweetAlert('Okey!', response.text, 'success');
 									$form.find('input').val('');
 									$form.find('textarea').val('');
 								}
 							},
 							complete: function(jqXHR, status) {
-								console.log('Request status: ' + status);
+								if (status != 'success')
+									sweetAlert('Oops!', 'Something went wrong!', 'error');
 							}
 						});
 					}
