@@ -40,7 +40,7 @@
 
 					var $this = $(this),
 						$wrapper = $('<div class="textarea-wrapper"></div>'),
-						$submits = $this.find('input[type="submit"]');
+						$submits = $this.find('button[type="submit"]');
 
 					$this
 						.wrap($wrapper)
@@ -57,6 +57,7 @@
 
 								$(this).blur();
 
+								$submits.click();
 							}
 
 						})
