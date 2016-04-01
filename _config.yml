@@ -30,6 +30,7 @@ exclude:
   - CNAME
   - .gitignore
   - .sass-cache
+  - README.md
 
 # Sass conversion config
 sass:
